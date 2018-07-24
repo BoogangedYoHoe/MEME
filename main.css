@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Ninja;
+  src: url(njnaruto.ttf);
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-family: "Ninja";
+
+}
+p {
+  color: #ff0000
+}
