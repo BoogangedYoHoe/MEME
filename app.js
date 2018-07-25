@@ -6,6 +6,8 @@ $(document).ready(function(){
   var $jumpaudio = $('#jump-audio')[0]; // [0] for multiple sources
   $jumpscare.hide();
 
+  // $("#bgmusic")[0].play();
+
   $('#jump-button').on('click', function(){
     $jumpscare.show();
     $jumpaudio.play();
