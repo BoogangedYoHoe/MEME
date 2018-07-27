@@ -1,5 +1,6 @@
 body{
-  background-image: url('sad.gif');
+  background-image: url('corgiswimflip.gif');
+  background-attachment: fixed;
 
 }
 
@@ -27,4 +28,13 @@ p {
   position: fixed;
   left: 0;
   top: 0;
+}
+
+.col img {
+  width: 100%;
+  margin: 2%;
+}
+
+footer {
+  text-align: center;
 }

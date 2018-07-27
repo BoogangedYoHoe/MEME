@@ -3,55 +3,191 @@
 
   <head>
     <meta charset="utf-8">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootstrap JS & jQuery CDNs -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Locally Hosted Files -->
     <link rel="stylesheet" href="main.css">
     <script src="app.js" type="text/javascript"></script>
     <title></title>
   </head>
 
   <body>
-    <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:256px;height:174px;"src="https://www.clocklink.com/html5embed.php?clock=046&timezone=USA_SanFrancisco&color=black&size=256&Title=&Message=&Target=&From=2018,1,1,0,0,0&Color=black"></iframe>
+
+    <!-- <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:256px;height:174px;"src="https://www.clocklink.com/html5embed.php?clock=046&timezone=USA_SanFrancisco&color=black&size=256&Title=&Message=&Target=&From=2018,1,1,0,0,0&Color=black"></iframe> -->
+
+    <audio id="bgmusic" controls >
+      <source src="Halsey - Castle (Audio).mp3" type="">
+    </audio>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a id="menu-memes" class="dropdown-item" href="#">Memes</a>
+        <a id="menu-drawings" class="dropdown-item" href="#">Drawings</a>
+        <a id="menu-videos" class="dropdown-item" href="#">Funny Videos</a>
+      </div>
+    </div>
+
+    <!-- Welcome -->
     <img src="titile.png" alt="">
     <img src="welcome.jpg" alt="">
-    <img src="title2.png" alt="">
-    <img src="Meme2.jpg" alt="">
-    <img src="Meme3.jpg" alt="">
-    <img src="FATTY.jpg" alt="">
-    <img src="autismo.jpg" alt="">
-    <img src="bc91105d9bba9d5f1f0333f59e9d0c0bc9bb28f7_00.jpg" alt="">
-    <img src="fortnitememe.jpg" alt="">
-    <img src="trump-twitter-700x.jpg" alt="">
-    <img src="drake.png" alt="">
-    <img src="insta.png" alt="">
-    <img src="killme.jpg" alt="">
-    <img src="sotrue.jpg" alt="">
-    <img src="burn.jpg" alt="">
-    <img src="tosh.jpg" alt="">
-    <img src="sadness.jpg" alt="">
-    <img src="WK4EVR.jpg" alt="">
-    <img src="howifeel.jpg" alt="">
-    <img src="everyday.jpg" alt="">
-    <img src="b296665d3322b012939df7f434e4114d.jpg" alt="">
-    <img src="jesus.png" alt="">
-    <img src="yes.jpg" alt="">
-    <img src="depression.png" alt="">
-    <img src="title3.png" alt="">
-    <img src="flowey.jpg" alt="">
-    <img src="geno.jpg" alt="">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/u9gKAOYAuGs" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ENjQC5FpIeo" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/04R6hFPZQhg" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/oLPcHl2yS3M" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
-    <button id="jump-button" type="button" name="width="180" height="115""> Click For special memes </button>
-    <img id="jumpscare" src="Jumpscare.gif" alt="">
-    <audio id="jump-audio" src="JCSF.mp3"></audio>
 
-<audio id="bgmusic" controls >
-  <source src="Halsey - Castle (Audio).mp3" type="">
+    <!-- Memes -->
+    <div id="memes" class="container">
+      <img src="title2.png" alt="">
+      <div class="row">
+        <div class="col">
+          <img src="Meme2.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="Meme3.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="FATTY.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="autismo.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="bc91105d9bba9d5f1f0333f59e9d0c0bc9bb28f7_00.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="fortnitememe.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="trump-twitter-700x.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="drake.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="insta.png" alt="">
+        </div>
+        <div class="col">
+          <img src="killme.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="sotrue.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="burn.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="tosh.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="sotrue.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="burn.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="tosh.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="sadness.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="WK4EVR.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="howifeel.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="everyday.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="b296665d3322b012939df7f434e4114d.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="jesus.png" alt="">
+        </div>
+        <div class="col">
+          <img src="yes.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="depression.png" alt="">
+        </div>
+      </div>
+      <button id="jump-button" type="button" name="width="180" height="115""> Click For special memes </button>
+      <img id="jumpscare" src="Jumpscare.gif" alt="">
+      <audio id="jump-audio" src="JCSF.mp3"></audio>
+    </div> <!-- closes 'meme' container -->
 
 
-</audio>
+    <!-- Drawings -->
+    <div id="drawings" class="container">
+      <img src="title3.png" alt="">
+      <div class="row">
+        <div class="col">
+          <img src="flowey.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="geno.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="ctl.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="spn.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="deadpool.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="doggo.jpg" alt="">
+        </div>
+        <div class="col">
+          <img src="Undyne.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <iframe src="https://drive.google.com/file/d/1xcEknDHLcz-YVOcVUflflkY654SS4xoa/preview" width="640" height="480"></iframe>
+      </div>
+    </div> <!-- closes 'drawings' container -->
 
+
+    <!-- Videos TODO: ADD VIDEO TITLE IMG -->
+    <img src="" alt="">
+    <div id="videos" class="container">
+      <div class="row">
+        <div class="col">
+          <iframe width="400" height="250" src="https://www.youtube.com/embed/u9gKAOYAuGs" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
+        </div>
+        <div class="col">
+          <iframe width="400" height="250" src="https://www.youtube.com/embed/ENjQC5FpIeo" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <iframe width="400" height="250" src="https://www.youtube.com/embed/04R6hFPZQhg" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
+        </div>
+        <div class="col">
+          <iframe width="400" height="250" src="https://www.youtube.com/embed/oLPcHl2yS3M" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>copyright 2018 Keivan</p>
+    </footer>
 
   </body>
 </html>
