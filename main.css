@@ -30,11 +30,21 @@ p {
   top: 0;
 }
 
-.col a img {
+.col a img, .col-4 a img {
   width: 100%;
   margin: 2%;
+  border: 3px solid black;
 }
 
 footer {
   text-align: center;
+}
+
+#menu, #bgmusic {
+  position: fixed;
+  margin: 3.5% 2%;
+}
+
+#menu {
+  margin: 7% 2%;
 }
